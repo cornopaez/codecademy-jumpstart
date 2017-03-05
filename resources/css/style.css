@@ -35,11 +35,17 @@ nav .container-fluid img {
 	color: #337ab7;
 }
 
+@media only screen and (max-width: 767px) {
+	nav .container-fluid img {
+		display: none;
+	}
+}
+
 /*Jumbotron
 ----------------------------------------------*/
 
 .jumbotron {
-	height: 90vh;
+	min-height: 44rem;
 	margin-top: 3.125rem;
 	background: url("../images/jumbotron.png") no-repeat center;
 }
@@ -50,6 +56,7 @@ nav .container-fluid img {
 	text-align: center;
 	position: relative;
 	top: 10rem; 
+	height: 100%;
 }
 
 .jumbotron .container-fluid .text h1 {
@@ -77,6 +84,16 @@ nav .container-fluid img {
 	border-color: #399BD1;
 }
 
+@media only screen and (max-width: 767px)  {
+	.jumbotron {
+		margin-top: 8.5rem;
+	}
+
+	.jumbotron .container-fluid .text {
+		top: 5rem; 
+	}
+}
+
 /*Projects
 ----------------------------------------------*/
 
@@ -96,7 +113,7 @@ nav .container-fluid img {
 }
 
 .projects .container-fluid .featured-content img {
-	max-width: 100%;
+	width: 100%;
 }
 
 .projects .container-fluid .featured-content h4 {
@@ -115,7 +132,7 @@ nav .container-fluid img {
 }
 
 .projects .container-fluid  .projects-content img {
-	max-width: 100%;	
+	width: 100%;	
 }
 
 /*Footer
